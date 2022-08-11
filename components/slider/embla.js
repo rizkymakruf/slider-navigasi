@@ -3,10 +3,12 @@ import { PrevButton, NextButton } from "./button";
 import useEmblaCarousel from "embla-carousel-react";
 // import { mediaByIndex } from "../media";
 // import "../css/embla.css";
+import Image from "next/dist/client/image";
+import Pic1 from "../../public/cat.jpg";
 
 const EmblaCarousel = ({ slides }) => {
   const [viewportRef, embla] = useEmblaCarousel({
-    slidesToScroll: 2,
+    slidesToScroll: 4,
     skipSnaps: false,
   });
   const [prevBtnEnabled, setPrevBtnEnabled] = useState(false);
@@ -27,65 +29,50 @@ const EmblaCarousel = ({ slides }) => {
   }, [embla, onSelect]);
 
   return (
-    <div className="embla">
+    <div className="embla relative">
       <div className="embla__viewport" ref={viewportRef}>
         <div className="embla__container">
           {/* {slides.map((index) => ( */}
           <div className="embla__slide">
-            <div className="embla__slide__inner">
-              <img
-                className="embla__slide__img"
-                src={
-                  "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                }
-                alt="A cool cat."
-              />
+            <div className="embla__slide__inner relative rounded-md">
+              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
             </div>
           </div>
           {/* ))} */}
           {/* {slides.map((index) => ( */}
           <div className="embla__slide">
-            <div className="embla__slide__inner">
-              <img
-                className="embla__slide__img"
-                src={
-                  "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                }
-                alt="A cool cat."
-              />
+            <div className="embla__slide__inner relative rounded-md">
+              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
             </div>
           </div>
           {/* ))} */}
           {/* {slides.map((index) => ( */}
           <div className="embla__slide">
-            <div className="embla__slide__inner">
-              <img
-                className="embla__slide__img"
-                src={
-                  "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                }
-                alt="A cool cat."
-              />
+            <div className="embla__slide__inner relative rounded-md">
+              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
             </div>
           </div>
           {/* ))} */}
           {/* {slides.map((index) => ( */}
           <div className="embla__slide">
-            <div className="embla__slide__inner">
-              <img
-                className="embla__slide__img"
-                src={
-                  "https://images.unsplash.com/photo-1519052537078-e6302a4968d4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
-                }
-                alt="A cool cat."
-              />
+            <div className="embla__slide__inner relative rounded-md">
+              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
+            </div>
+          </div>
+          {/* ))} */}
+          {/* {slides.map((index) => ( */}
+          <div className="embla__slide">
+            <div className="embla__slide__inner relative rounded-md">
+              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
             </div>
           </div>
           {/* ))} */}
         </div>
       </div>
-      <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
-      <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+      <div className="">
+        <PrevButton onClick={scrollPrev} enabled={prevBtnEnabled} />
+        <NextButton onClick={scrollNext} enabled={nextBtnEnabled} />
+      </div>
     </div>
   );
 };

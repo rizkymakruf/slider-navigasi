@@ -37,7 +37,7 @@
 
 .embla__slide {
   position: relative;
-  min-width: 100%;
+  min-width: 25%;
   padding-left: 10px;
 }
 
@@ -66,13 +66,13 @@
   touch-action: manipulation;
   position: absolute;
   z-index: 1;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: -15;
+  transform: translateY(80%);
   border: 0;
   width: 30px;
   height: 30px;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   fill: #1bcacd;
   padding: 0;
 }
