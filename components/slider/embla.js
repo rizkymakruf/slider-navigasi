@@ -4,7 +4,7 @@ import useEmblaCarousel from "embla-carousel-react";
 // import { mediaByIndex } from "../media";
 // import "../css/embla.css";
 import Image from "next/dist/client/image";
-import Pic1 from "../../public/cat.jpg";
+import Pic1 from "../../public/duit.jpg";
 
 const EmblaCarousel = ({ slides }) => {
   const [viewportRef, embla] = useEmblaCarousel({
@@ -33,40 +33,119 @@ const EmblaCarousel = ({ slides }) => {
       <div className="embla__viewport" ref={viewportRef}>
         <div className="embla__container">
           {/* {slides.map((index) => ( */}
-          <div className="embla__slide">
+          {/* <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
               <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
             </div>
-          </div>
+          </div> */}
           {/* ))} */}
-          {/* {slides.map((index) => ( */}
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
-              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
+              <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
+                <div className="w-full h-36rounded-t-md">
+                  <Image
+                    src={Pic1}
+                    layout={"responsive"}
+                    objectFit={"cover"}
+                    className={"rounded-t-md"}
+                  />
+                </div>
+                <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
+                  <p className="text-lg font-semibold text-left">
+                    Pinjaman bunga 1%
+                  </p>
+                  <p className="text-sm text-justify pb-2">
+                    Vestibulum sit amet tortor libero lobortis semper at et
+                    odio. In eu tellus tellus. Pellentesque ullamcorper
+                    ultrices. Aenean facilisis vitae purus facilisis semper.
+                  </p>
+                  <button className="border border-blue-500 rounded-md px-2 py-1 font-semibold hover:text-blue-500">
+                    Lihat detail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          {/* ))} */}
-          {/* {slides.map((index) => ( */}
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
-              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
+              <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
+                <div className="w-full h-36 bg-blue-500 rounded-t-md"></div>
+                <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
+                  <p className="text-lg font-semibold text-left">
+                    Pinjaman bunga 1%
+                  </p>
+                  <p className="text-sm text-justify pb-2">
+                    Vestibulum sit amet tortor libero lobortis semper at et
+                    odio. In eu tellus tellus. Pellentesque ullamcorper
+                    ultrices. Aenean facilisis vitae purus facilisis semper.
+                  </p>
+                  <button className="border border-blue-500 rounded-md px-2 py-1 font-semibold hover:text-blue-500">
+                    Lihat detail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          {/* ))} */}
-          {/* {slides.map((index) => ( */}
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
-              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
+              <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
+                <div className="w-full h-36 bg-blue-500 rounded-t-md"></div>
+                <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
+                  <p className="text-lg font-semibold text-left">
+                    Pinjaman bunga 1%
+                  </p>
+                  <p className="text-sm text-justify pb-2">
+                    Vestibulum sit amet tortor libero lobortis semper at et
+                    odio. In eu tellus tellus. Pellentesque ullamcorper
+                    ultrices. Aenean facilisis vitae purus facilisis semper.
+                  </p>
+                  <button className="border border-blue-500 rounded-md px-2 py-1 font-semibold hover:text-blue-500">
+                    Lihat detail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          {/* ))} */}
-          {/* {slides.map((index) => ( */}
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
-              <Image src={Pic1} layout={"responsive"} objectFit={"cover"} />
+              <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
+                <div className="w-full h-36 bg-blue-500 rounded-t-md"></div>
+                <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
+                  <p className="text-lg font-semibold text-left">
+                    Pinjaman bunga 1%
+                  </p>
+                  <p className="text-sm text-justify pb-2">
+                    Vestibulum sit amet tortor libero lobortis semper at et
+                    odio. In eu tellus tellus. Pellentesque ullamcorper
+                    ultrices. Aenean facilisis vitae purus facilisis semper.
+                  </p>
+                  <button className="border border-blue-500 rounded-md px-2 py-1 font-semibold hover:text-blue-500">
+                    Lihat detail
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
-          {/* ))} */}
+          <div className="embla__slide">
+            <div className="embla__slide__inner relative rounded-md">
+              <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
+                <div className="w-full h-36 bg-blue-500 rounded-t-md"></div>
+                <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
+                  <p className="text-lg font-semibold text-left">
+                    Pinjaman bunga 1%
+                  </p>
+                  <p className="text-sm text-justify pb-2">
+                    Vestibulum sit amet tortor libero lobortis semper at et
+                    odio. In eu tellus tellus. Pellentesque ullamcorper
+                    ultrices. Aenean facilisis vitae purus facilisis semper.
+                  </p>
+                  <button className="border border-blue-500 rounded-md px-2 py-1 font-semibold hover:text-blue-500">
+                    Lihat detail
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="">
