@@ -42,7 +42,7 @@ const EmblaCarousel = ({ slides }) => {
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
               <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
-                <div className="w-full h-36rounded-t-md">
+                <div className="w-full h-36 rounded-t-md">
                   <Image
                     src={Pic1}
                     layout={"responsive"}
@@ -69,7 +69,14 @@ const EmblaCarousel = ({ slides }) => {
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
               <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
-                <div className="w-full h-36 bg-blue-500 rounded-t-md"></div>
+                <div className="w-full h-36 rounded-t-md">
+                  <Image
+                    src={Pic1}
+                    layout={"responsive"}
+                    objectFit={"cover"}
+                    className={"rounded-t-md"}
+                  />
+                </div>
                 <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
                   <p className="text-lg font-semibold text-left">
                     Pinjaman bunga 1%
@@ -89,7 +96,14 @@ const EmblaCarousel = ({ slides }) => {
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
               <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
-                <div className="w-full h-36 bg-blue-500 rounded-t-md"></div>
+                <div className="w-full h-36 rounded-t-md">
+                  <Image
+                    src={Pic1}
+                    layout={"responsive"}
+                    objectFit={"cover"}
+                    className={"rounded-t-md"}
+                  />
+                </div>
                 <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
                   <p className="text-lg font-semibold text-left">
                     Pinjaman bunga 1%
@@ -109,7 +123,14 @@ const EmblaCarousel = ({ slides }) => {
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
               <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
-                <div className="w-full h-36 bg-blue-500 rounded-t-md"></div>
+                <div className="w-full h-36 rounded-t-md">
+                  <Image
+                    src={Pic1}
+                    layout={"responsive"}
+                    objectFit={"cover"}
+                    className={"rounded-t-md"}
+                  />
+                </div>
                 <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
                   <p className="text-lg font-semibold text-left">
                     Pinjaman bunga 1%
@@ -129,7 +150,14 @@ const EmblaCarousel = ({ slides }) => {
           <div className="embla__slide">
             <div className="embla__slide__inner relative rounded-md">
               <div className="border border-[#2196F3] bg-white rounded-md shadow-md shadow-blue-300">
-                <div className="w-full h-36 bg-blue-500 rounded-t-md"></div>
+                <div className="w-full h-36 rounded-t-md">
+                  <Image
+                    src={Pic1}
+                    layout={"responsive"}
+                    objectFit={"cover"}
+                    className={"rounded-t-md"}
+                  />
+                </div>
                 <div className="w-full rounded-b-md px-2 py-2 flex flex-col space-y-3">
                   <p className="text-lg font-semibold text-left">
                     Pinjaman bunga 1%
